@@ -1,5 +1,9 @@
 .benefits-section {
   padding-bottom: 94px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 .benefits__title {
   margin-left: auto;

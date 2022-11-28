@@ -1,6 +1,11 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
+
+.header-conteiner {
+  display: flex;
+  justify-content: space-between;
+}
 .nav-bar {
   display: flex;
 }
@@ -26,7 +31,11 @@
 }
 
 .nav-bar__items {
-  display: flex;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .nav-bar__items .nav-bar__list:not(:last-child) {
   margin-right: 50px;
@@ -72,8 +81,16 @@
 }
 // header contacts
 .contacts {
-  display: flex;
-  margin-left: auto;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    margin-left: auto;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+  }
 }
 
 .contacts__list {

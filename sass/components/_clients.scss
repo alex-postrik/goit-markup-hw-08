@@ -1,21 +1,35 @@
 .clients-section {
-  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-  @include padding-section;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    @include padding-section;
+  }
 }
 .clients__title {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 
-  font-weight: 700px;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: calc(33 / 28);
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-size: 36px;
+    line-height: calc(42 / 36);
+  }
 }
 
 .clients__list {
   @include flexy;
+  flex-wrap: wrap;
   gap: 30px;
 }
 
@@ -27,7 +41,7 @@
 .clients__link {
   @include flexy;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   color: var(--social-link);
@@ -40,6 +54,10 @@
   &:focus {
     border-color: var(--accent-color);
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
   }
 }
 

@@ -55,6 +55,11 @@
             >
           </li>
         </ul>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg class="menu-toggle__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu__open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!--=============================== контент студія =======================================-->
@@ -447,7 +452,7 @@
     <!--================================= футер =============================================-->
     <footer class="footer page-footer">
       <div class="footer-conteiner conteiner">
-        <div>
+        <div class="footer-conteiner__address">
           <a href="./index.html" class="logo footer__logo link"
             >Web<span class="logo-light">Studio</span></a
           >
@@ -607,6 +612,75 @@
         </form>
       </div>
     </div>
+    <!-- =============================== mobile menu ========================================= -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="menu-toggle__icon" width="40" height="40">
+          <use href="./images/icons.svg#icon-menu__close"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Студія</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Портфоліо</a></li>
+        <li class="mobile-menu__item"><a href="#" class="mobile-menu__link link">Контакти</a></li>
+      </ul>
+
+      <ul class="mobile-menu__contacts-list list">
+        <li class="menu-item_number">
+          <a class="menu-link__number link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
+        <li class="menu-item_email">
+          <a class="menu-link__email link" href="info@devstudio.com">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list list">
+        <li class="menu-social__item">
+          <a
+            class="menu-social__link link"
+            href="https://instagram.com"
+            target="_blank"
+            rel="nooperer noreferrer nofollow"
+            >Instagram</a
+          >
+        </li>
+        <li class="menu-social__item">
+          <a
+            class="menu-social__link link"
+            href="https://twitter.com"
+            target="_blank"
+            rel="nooperer noreferrer nofollow"
+            >Twitter</a
+          >
+        </li>
+        <li class="menu-social__item">
+          <a
+            class="menu-social__link link"
+            href="https://facebook.com"
+            target="_blank"
+            rel="nooperer noreferrer nofollow"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu-social__item">
+          <a
+            class="menu-social__link link"
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="nooperer noreferrer nofollow"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <!--================================ mobile-menu js=======================================  -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <!--================================ JS MODAL=============================================-->
     <script src="./js/modal.js"></script>
   </body>

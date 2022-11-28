@@ -1,23 +1,36 @@
 .team-section {
-  display: flex;
-
-  @include padding-section;
-
   background-color: var(--secondary-main-color);
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    @include padding-section;
+  }
 }
 .team-title {
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: calc(33 / 28);
+
+  @media screen and (min-width: 1200px) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+    font-size: 28px;
+    line-height: 33px;
+  }
 }
 .team__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 30px;
+  display: block;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
 }
 
 .team-cards {
@@ -28,6 +41,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .team-cards__content {
