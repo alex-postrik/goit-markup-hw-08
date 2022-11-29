@@ -278,7 +278,6 @@ ul {
 }
 
 .hero {
-  min-width: 480px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin-left: auto;
@@ -292,11 +291,6 @@ ul {
   color: var(--header-color);
   text-align: center;
   outline: 2px solid red;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    max-width: 768px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -940,6 +934,9 @@ ul {
 @media screen and (max-width: 767px) {
   .footer-social {
     padding-bottom: 60px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 @media screen and (min-width: 768px) {
