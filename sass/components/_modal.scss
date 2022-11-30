@@ -6,8 +6,14 @@
   display: flex;
   flex-direction: column;
 
-  min-width: 528px;
-  min-height: 581px;
+  min-width: 450px;
+  min-height: 609px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
+
   padding: 40px;
 
   background-color: var(--header-color);
@@ -136,8 +142,11 @@
 
 .backdrop-form__policy {
   position: relative;
+  display: flex;
 
-  @include flexy;
+  @media screen and (min-width: 768px) {
+    @include flexy;
+  }
 
   padding-top: 20px;
   padding-bottom: 30px;
@@ -161,6 +170,12 @@
 
 .policy__text {
   padding-left: 7px;
+  font-size: 12px;
+  align-items: center;
+  display: inline-flex;
+
+  @media screen and (max-width: 480px) {
+  }
 
   user-select: none;
   line-height: calc(14 / 24);
