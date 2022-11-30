@@ -131,13 +131,33 @@
           <ul class="benefits__list list">
             <li class="benefits__items">
               <div class="benefits__wrapper">
-                <img
-                  src="./images/box11.jpg"
-                  alt="jobs"
-                  width="370"
-                  height="294"
-                  class="wraper-image image"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/benefits/imgbox_lg@1x.webp 1x,
+                      ./images/benefits/imgbox_lg@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/benefits/imgbox_lg@1x.jpg,
+                      ./images/benefits/imgbox_lg@2x.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/benefits/imgbox_lg@1x.jpg"
+                    alt="jobs"
+                    width="370"
+                    height="294"
+                    class="wraper-image image"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="wrapper-box">
                   <p class="wrapper-box__text">Десктопні додатки</p>
                 </div>
@@ -145,7 +165,33 @@
             </li>
             <li class="benefits-items">
               <div class="benefits__wrapper">
-                <img src="./images/box22.jpg" alt="jobs" width="370" height="294" class="image" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/benefits/imgbox_lg@1x-1.webp 1x,
+                      ./images/benefits/imgbox_lg@2x-1.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/benefits/imgbox_lg@1x-1.jpg,
+                      ./images/benefits/imgbox_lg@2x-1.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/benefits/imgbox_lg@1x-1.jpg"
+                    alt="jobs"
+                    width="370"
+                    height="294"
+                    class="image"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="wrapper-box">
                   <p class="wrapper-box__text">Мобільні додатки</p>
                 </div>
@@ -153,7 +199,33 @@
             </li>
             <li class="benefits-items">
               <div class="benefits__wrapper">
-                <img src="./images/box33.jpg" alt="jobs" width="370" height="294" class="image" />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/benefits/imgbox_lg@1x-2.webp 1x,
+                      ./images/benefits/imgbox_lg@2x-2.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/benefits/imgbox_lg@1x-2.jpg,
+                      ./images/benefits/imgbox_lg@2x-2.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/benefits/imgbox_lg@1x-2.jpg"
+                    alt="jobs"
+                    width="370"
+                    height="294"
+                    class="image"
+                    loading="lazy"
+                  />
+                </picture>
+
                 <div class="wrapper-box">
                   <p class="wrapper-box__text">Дизайнерські рішення</p>
                 </div>
@@ -171,15 +243,33 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
+                  srcset="./images/team/img_lg@1x.webp 1x, ./images/team/img_lg@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="./images/team/img_lg@1x.jpg 1x, ./images/team/img_lg@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_md@1x.webp 1x, ./images/team/img_md@2x.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="./images/team/img_md@1x.jpg 1x, ./images/team/img_md@2x.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(maxcture-width: 767px)"
+                  srcset="./images/team/img_sm@1x.webp 1x, ./images/team/img_sm@2x.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(maxcture-width: 767px)"
                   srcset="./images/team/img_sm@1x.jpg 1x, ./images/team/img_sm@2x.jpg 2x"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/team/img_sm@1x.jpg"
@@ -248,15 +338,33 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
+                  srcset="./images/team/img_lg@1x-1.webp 1x, ./images/team/img_lg@2x-1.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="./images/team/img_lg@1x-1.jpg 1x, ./images/team/img_lg@2x-1.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_md@1x-1.webp 1x, ./images/team/img_md@2x-1.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="./images/team/img_md@1x-1.jpg 1x, ./images/team/img_md@2x-1.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img_sm@1x-1.webp 1x, ./images/team/img_sm@2x-1.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/team/img_sm@1x-1.jpg 1x, ./images/team/img_sm@2x-1.jpg 2x"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/team/img_sm@1x-1.jpg"
@@ -325,15 +433,33 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
+                  srcset="./images/team/img_lg@1x-2.webp 1x, ./images/team/img_lg@2x-2.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="./images/team/img_lg@1x-2.jpg 1x, ./images/team/img_lg@2x-2.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_md@1x-2.webp 1x, ./images/team/img_md@2x-2.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="./images/team/img_md@1x-2.jpg 1x, ./images/team/img_md@2x-2.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img_sm@1x-2.webp 1x, ./images/team/img_sm@2x-2.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/team/img_sm@1x-2.jpg 1x, ./images/team/img_sm@2x-2.jpg 2x"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/team/img_sm@1x-2.jpg"
@@ -402,15 +528,33 @@
               <picture>
                 <source
                   media="(min-width: 1200px)"
+                  srcset="./images/team/img_lg@1x-3.webp 1x, ./images/team/img_lg@2x-3.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1200px)"
                   srcset="./images/team/img_lg@1x-3.jpg 1x, ./images/team/img_lg@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="./images/team/img_md@1x-3.webp 1x, ./images/team/img_md@2x-3.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(min-width: 768px)"
                   srcset="./images/team/img_md@1x-3.jpg 1x, ./images/team/img_md@2x-3.jpg 2x"
+                  type="image/jpg"
+                />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./images/team/img_sm@1x-3.webp 1x, ./images/team/img_sm@2x-3.webp 2x"
+                  type="image/webp"
                 />
                 <source
                   media="(max-width: 767px)"
                   srcset="./images/team/img_sm@1x-3.jpg 1x, ./images/team/img_sm@2x-3.jpg 2x"
+                  type="image/jpg"
                 />
                 <img
                   src="./images/team/img_sm@1x-3.jpg"
