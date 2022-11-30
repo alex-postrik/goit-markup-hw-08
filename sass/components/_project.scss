@@ -1,7 +1,11 @@
 .project {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+  display: block;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 }
 .projects__items {
   transition: box-shadow var(--tronsformation-hover);
