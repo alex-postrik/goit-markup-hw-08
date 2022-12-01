@@ -1210,6 +1210,10 @@ ul {
   }
 }
 
+.mailing__btn {
+  width: 216px;
+}
+
 .mailing__btn,
 .btn {
   display: -webkit-box;
@@ -1224,7 +1228,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   padding: 0;
-  width: 216px;
+  max-width: 216px;
   height: 50px;
   cursor: pointer;
   font-weight: 700;
@@ -1304,7 +1308,7 @@ ul {
 }
 @media screen and (max-width: 479px) {
   .modal-conteiner {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 30px);
   }
 }
 @media screen and (min-width: 768px) {
@@ -1443,6 +1447,9 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
   padding-top: 20px;
   padding-bottom: 30px;
   cursor: pointer;
@@ -1483,7 +1490,6 @@ ul {
 
 .policy__text {
   padding-left: 7px;
-  font-size: 12px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1498,7 +1504,7 @@ ul {
   letter-spacing: 0.03em;
   color: var(--content-text-color);
 }
-@media screen and (max-width: 467px) {
+@media screen and (min-width: 480px) {
   .policy__text {
     font-size: 12px;
   }
@@ -1523,6 +1529,12 @@ ul {
 .modal-btn {
   display: block;
   margin: 0 auto;
+  width: 216px;
+}
+@media screen and (max-width: 467px) {
+  .modal-btn {
+    max-width: 100%;
+  }
 }
 
 .section-portfolio {

@@ -10,7 +10,7 @@
   height: 609px;
 
   @media screen and (max-width: 479px) {
-    width: calc(100vw - 60px);
+    width: calc(100vw - 30px);
   }
 
   @media screen and (min-width: 768px) {
@@ -148,6 +148,10 @@
   position: relative;
   display: flex;
 
+  font-size: 12px;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
+
   @media screen and (min-width: 768px) {
     @include flexy;
   }
@@ -174,7 +178,6 @@
 
 .policy__text {
   padding-left: 7px;
-  font-size: 12px;
   align-items: center;
   display: inline-flex;
 
@@ -184,7 +187,7 @@
 
   color: var(--content-text-color);
 
-  @media screen and (max-width: 467px) {
+  @media screen and (min-width: 480px) {
     font-size: 12px;
   }
 
@@ -204,4 +207,9 @@
 .modal-btn {
   display: block;
   margin: 0 auto;
+  width: 216px;
+
+  @media screen and (max-width: 467px) {
+    max-width: calc(100%);
+  }
 }
