@@ -52,6 +52,7 @@
   background-color: var(--hero-footer-color);
   color: rgba(255, 255, 255, 0.6);
 
+  margin-bottom: 20px;
   @media screen and (max-width: 479px) {
     width: calc(100vw - 15px * 2);
     margin-bottom: 20px;
