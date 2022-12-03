@@ -1448,8 +1448,8 @@ ul {
   display: -ms-flexbox;
   display: flex;
   font-size: 12px;
-  line-height: 1.1667;
   letter-spacing: 0.03em;
+  line-height: 1.71;
   padding-top: 20px;
   padding-bottom: 30px;
   cursor: pointer;
@@ -1466,6 +1466,15 @@ ul {
         -ms-flex-align: center;
             align-items: center;
   }
+}
+
+.policy__icon-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
 }
 
 .policy__icon-check .icon__unchecked {
@@ -1493,14 +1502,11 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  line-height: 0.5833333333;
+  line-height: 1.7142857143;
   letter-spacing: 0.03em;
   color: var(--content-text-color);
 }

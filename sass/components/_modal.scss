@@ -149,8 +149,8 @@
   display: flex;
 
   font-size: 12px;
-  line-height: 1.1667;
   letter-spacing: 0.03em;
+  line-height: 1.71;
 
   @media screen and (min-width: 768px) {
     @include flexy;
@@ -160,6 +160,11 @@
   padding-bottom: 30px;
 
   cursor: pointer;
+}
+
+.policy__icon-check {
+  display: flex;
+  align-items: baseline;
 }
 .policy__icon-check .icon__unchecked {
   opacity: 1;
@@ -179,10 +184,9 @@
 .policy__text {
   padding-left: 7px;
   align-items: center;
-  display: inline-flex;
 
   user-select: none;
-  line-height: calc(14 / 24);
+  line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 
   color: var(--content-text-color);
