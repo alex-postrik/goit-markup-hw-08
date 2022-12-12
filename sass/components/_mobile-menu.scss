@@ -131,8 +131,15 @@
   }
 }
 .mobile-menu__social-list {
-  display: inline-flex;
+  display: flex;
   // align-items: center;
+
+  @media screen and (max-width: 467px) {
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
   margin-top: 64px;
   gap: 20px;
 }
